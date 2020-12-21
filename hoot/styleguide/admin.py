@@ -9,6 +9,7 @@ class StyleGuideAdmin(MarkdownxModelAdmin):
 	list_display = ('title', 'created_at', 'updated_at')
 	filter_horizontal=("tags",)
 	ordering = ('title',)
+	search_fields = ('title', )
 
 
 @admin.register(Section)
